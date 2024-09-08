@@ -1,0 +1,38 @@
+/* Navbar.css */
+
+/* Default styling for nav links */
+.nav-link {
+    font-size: 25px !important; /* Default font size */
+    margin: 25px !important;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Styling for active nav link */
+  .nav-link.active {
+    font-weight: bold; /* Emphasize active link */
+    color: yellowgreen; /* Change text color for active link */
+    border-bottom: 2px solid yellowgreen; /* Underline or border effect */
+  }
+  a{
+    color:white
+  }
+  
+  .custom-button {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  /* Add margin between buttons */
+  .me-2 {
+    margin-right: 10px;
+  }
+  
+  .ms-2 {
+    margin-left: 10px;
+  }
+  

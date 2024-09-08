@@ -1,0 +1,29 @@
+/* Style for social icons */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the icon circular */
+    background-color: #768600; /* Background color for the circle */
+    text-decoration: none;
+    font-size: 20px; /* Adjust icon size */
+    color: green; /* Ensure the icon color is white */
+  }
+  
+  .social-icon i {
+    line-height: 40px; /* Centers the icon vertically */
+  }
+  
+  /* Style for news updates */
+  .news-updates {
+    background-color: white; /* Adjust background color as needed */
+    padding: 5px 0; /* Add padding for better spacing */
+  }
+  
+  .news-updates marquee {
+    color: green; /* Color of the text inside marquee */
+    font-size: 1rem; /* Font size for the marquee text */
+  }
+  

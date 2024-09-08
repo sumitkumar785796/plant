@@ -1,0 +1,46 @@
+import React from 'react';
+import './TopBar.css'; // Ensure you import the CSS file
+
+const TopBar = () => {
+  return (
+    <div className="text-white py-2" style={{backgroundColor:"#D2EC0E"}}>
+      <div className="container-fluid">
+        <div className="row align-items-center" style={{ height: "80px" }}>
+          {/* Left: Social Links */}
+          <div className="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mb-2 mb-md-0">
+            <a href="https://www.facebook.com/TEIFoundation?mibextid=ZbWKwL" className="social-icon text-white me-3">
+              <i className="fa fa-facebook"></i>
+            </a>
+            <a href="https://x.com/Himansh46056633/status/1728619066410324469" className="social-icon text-white me-3">
+              <i className="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/teif_9918?igsh=NjRoM3diNjVmejA3" className="social-icon text-white me-3">
+              <i className="fa fa-instagram"></i>
+            </a>
+            <a href="https://chat.whatsapp.com/EDMT03GT1BI6JOIgV77bbS" className="social-icon text-white me-3">
+              <i className="fa fa-whatsapp"></i>
+            </a>
+          </div>
+          {/* Center: News/Updates */}
+          <div className="col-12 col-md-4 text-center">
+            <div className="news-updates">
+            <marquee direction="left" behavior="scroll" scrollamount="5"  loop="infinite" style={{color:"green"}}>
+            Latest Updates: New products arriving soon! Stay tuned!
+          </marquee>
+          
+            </div>
+          </div>
+          {/* Right: Helpline */}
+          <div className="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
+            <i className="fa fa-phone me-2" style={{color:'green'}}></i>
+            <span className="text-white">
+              <a href="tel:9918771888" style={{color:'green',fontWeight:"700"}}>Helpline: +91-9918771888</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TopBar;

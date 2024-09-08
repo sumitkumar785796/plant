@@ -1,0 +1,12 @@
+/* Custom styles for the navbar toggler icon */
+.navbar-toggler-icon {
+  background-image: none; /* Remove default background */
+}
+
+.navbar-toggler-icon::before {
+  content: '\f0c9'; /* Font Awesome icon for hamburger menu */
+  font-family: 'Font Awesome 5 Free'; /* Font Awesome font */
+  font-weight: 900; /* Solid style */
+  font-size: 1.5rem; /* Adjust size */
+  color: #000; /* Adjust color */
+}

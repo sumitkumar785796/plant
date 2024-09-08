@@ -1,0 +1,33 @@
+.card {
+    /* Default card styling */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 10px;
+  }
+  
+  /* .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  } */
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .available {
+    border-color: green;
+    background-color: #ffffe0; /* Light green for available */
+  }
+  
+  .low-stock {
+    border-color: green;
+    background-color: #ffffe0; /* Light yellow for low stock */
+  }
+  
+  .not-available {
+    border-color: green;
+    background-color: #ffffe0; /* Light red for not available */
+  }
+  
