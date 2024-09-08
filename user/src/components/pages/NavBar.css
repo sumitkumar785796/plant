@@ -5,6 +5,7 @@
     font-size: 25px !important; /* Default font size */
     margin: 25px !important;
     text-decoration: none; /* Remove underline */
+    color:white;
   }
   
   /* Styling for active nav link */
@@ -12,9 +13,6 @@
     font-weight: bold; /* Emphasize active link */
     color: yellowgreen; /* Change text color for active link */
     border-bottom: 2px solid yellowgreen; /* Underline or border effect */
-  }
-  a{
-    color:white
   }
   
   .custom-button {
