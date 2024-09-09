@@ -20,11 +20,12 @@ const MiddleBar = () => {
 
                 {/* Center: Heading */}
                 <div className="text-center flex-grow-1">
-                    <h2 style={{ color: "green", fontWeight: "800", fontSize: "2.5rem" }}>
-                        MANAVTA NURSERY &nbsp;&nbsp; मानवता नर्सरी
+                    <h2 style={{ color: "green", fontWeight: "800", fontSize: "1.5rem" }}>
+                        <span style={{ color: "green", fontWeight: "800", fontSize: "5.5rem" }}>MANAVTA NURSERY</span>
                         <br />
                         <span className="typewriter">मिशन घर घर हरियाली से गरीब के घर खुशहाली</span>
                     </h2>
+                    
                 </div>
 
                 {/* Right: Buttons */}
