@@ -6,7 +6,7 @@ import Header from './components/pages/Header';
 import AboutPage from './components/pages/about/AboutPage';
 import Shop from './components/pages/product/Shop';
 import Contact from './components/pages/contact/Contact';
-import Product from './components/pages/product/Product';
+import NoPage from './components/pages/NoPage';
 import Login from './components/pages/auth/Login';
 import Registration from './components/pages/auth/Registration';
 import Profile from './components/pages/auth/Profile';
@@ -62,6 +62,7 @@ const App = () => {
             <Route path="shop/:id" element={<Shop />} />
             <Route path="blog" element={<Blog />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="ourwork" element={<NoPage/>}/>
             <Route path="*" element={<Header />} />
           </Route>
         </Routes>

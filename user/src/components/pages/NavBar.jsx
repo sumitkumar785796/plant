@@ -39,6 +39,9 @@ const Navbar = ({ profile, handleLogout, loading, handleCartClick, cartLoading }
               <NavLink className={getActiveClass} to="/blog">News</NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className={getActiveClass} to="/ourwork">Our Work</NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className={getActiveClass} to="/contact">Contact</NavLink>
             </li>
           </ul>

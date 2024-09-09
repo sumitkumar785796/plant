@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './TopBar.css'; // Ensure you import the CSS file
-
+import axios from 'axios';
 const TopBar = () => {
+  const [view, setView] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await axios.get("/api/blog");
+        setView(res.data.data);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, []);
   return (
     <div className="text-white py-2" style={{ backgroundColor: "#D2EC0E" }}>
       <div className="container-fluid">
@@ -33,7 +47,11 @@ const TopBar = () => {
           <div className="col-12 col-md-5 text-center mb-2 mb-md-0">
             <div className="news-updates">
               <marquee direction="left" behavior="scroll" scrollamount="5" loop="infinite" style={{ color: "green" }}>
-                Latest Updates: New products arriving soon! Stay tuned!
+                {view.map((element,index)=>(
+                  <span key={index}>
+                    * {element.blogname} 
+                  </span>
+                ))}
               </marquee>
             </div>
           </div>
