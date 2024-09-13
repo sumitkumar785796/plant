@@ -28,10 +28,11 @@ const Navbar = ({ profile, handleLogout, loading, handleCartClick, cartLoading }
             </li>
             <li className="nav-item">
               <NavLink className={getActiveClass} to="/portfolio">Portfolio</NavLink>
-            </li>
+            </li>{/* 
             <li className="nav-item">
               <NavLink className={getActiveClass} to="/gallery">Gallery</NavLink>
             </li>
+            */}
             <li className="nav-item">
               <NavLink className={getActiveClass} to="/shop">Shop</NavLink>
             </li>
